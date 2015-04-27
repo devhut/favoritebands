@@ -13,8 +13,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    UINib *headerViewNib = [UINib nibWithNibName:@"CustomHeaderView" bundle:[NSBundle mainBundle]];
-    [self.tableView registerNib:headerViewNib forHeaderFooterViewReuseIdentifier:@""];
+//    UINib *headerViewNib = [UINib nibWithNibName:@"CustomHeaderView" bundle:[NSBundle mainBundle]];
+//    [self.tableView registerNib:headerViewNib forHeaderFooterViewReuseIdentifier:@""];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,8 +24,7 @@
 
 #pragma mark - Table view data source
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    NSArray *allBands = [self.allBands allKeys];
-    return allBands.count;
+    return self.allBands.count;
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
@@ -61,14 +60,33 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    return 60;
+    return 100;
 }
-/*
+
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
- 
-    return nil;
+    
+    NSArray *allBands = [self.allBands allKeys];
+    NSString *bandKey = allBands[section];
+    NSDictionary *aBand = self.allBands[bandKey];
+    NSString *bandPhoto = aBand[@"photo"];
+
+    CGRect headerViewFrame = CGRectMake(0, 0, 320, 100);
+    UIView *headerView = [[UIView alloc]initWithFrame:headerViewFrame];
+    headerView.backgroundColor = [UIColor whiteColor];
+    
+    CGRect imageViewFrame = CGRectMake(10, 10, 80, 80);
+    UIImageView *bandImageView = [[UIImageView alloc]initWithFrame:imageViewFrame];
+    bandImageView.image = [UIImage imageNamed:bandPhoto];
+    [headerView addSubview:bandImageView];
+    
+    CGRect labelFrame = CGRectMake(100, 0, 220, 100);
+    UILabel *label = [[UILabel alloc]initWithFrame:labelFrame];
+    label.text = bandKey;
+    [headerView addSubview:label];
+    
+    return headerView;
 }
-*/
+
 
 #pragma mark - Navigation
 // In a storyboard-based application, you will often want to do a little preparation before navigation

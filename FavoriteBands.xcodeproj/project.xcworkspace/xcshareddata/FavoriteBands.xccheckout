@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>6655918E-0EDD-493B-AF33-4F2638AAB33B</string>
+	<key>IDESourceControlProjectName</key>
+	<string>FavoriteBands</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>6F64D65DB958C919A72D7D5A2F0B270BEBCDBD7F</key>
+		<string>https://github.com/devhut/favoritebands.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>FavoriteBands.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>6F64D65DB958C919A72D7D5A2F0B270BEBCDBD7F</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/devhut/favoritebands.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>6F64D65DB958C919A72D7D5A2F0B270BEBCDBD7F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>6F64D65DB958C919A72D7D5A2F0B270BEBCDBD7F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>FavoriteBands</string>
+		</dict>
+	</array>
+</dict>
+</plist>
